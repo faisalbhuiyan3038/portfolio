@@ -251,7 +251,7 @@ span {
 }
 .services-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
@@ -294,6 +294,9 @@ span {
 }
 .services-box:hover a{
   color: #8b8a8f;
+}
+.services-box:hover p{
+  color: #c9c9cc;
 }
 .portfolio-content {
   display: grid;
