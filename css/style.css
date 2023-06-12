@@ -256,7 +256,25 @@ span {
   gap: 1rem;
   margin-top: 2rem;
 }
+.servicesplus-content {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(1000px, auto));
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
 .services-box {
+  padding: 20px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid var(--main-color);
+  box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+}
+.servicesplus-box {
   padding: 20px;
   width: 260px;
   display: flex;
@@ -270,8 +288,16 @@ span {
 .services-box:hover{
  background-color: #02225a;
 }
+.servicesplus-box:hover{
+  background-color: #02225a;
+ }
 
 .services-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.4rem;
+}
+.servicesplus-box h3 {
   font-size: 1rem;
   font-weight: 600;
   margin: 0.7rem 0 0.4rem;
@@ -279,7 +305,15 @@ span {
 .services-box:hover h3{
   color: #fff;
 }
+.servicesplus-box:hover h3{
+  color: #fff;
+}
 .services-box .bx {
+  padding-top: 2rem;
+  font-size: 54px;
+  color: var(--main-color);
+}
+.servicesplus-box .bx {
   padding-top: 2rem;
   font-size: 54px;
   color: var(--main-color);
@@ -287,7 +321,15 @@ span {
 .services-box:hover .bx{
   color: #22cf91;
 }
+.servicesplus-box:hover .bx{
+  color: #22cf91;
+}
 .services-box a {
+  color: var(--main-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+}
+.servicesplus-box a {
   color: var(--main-color);
   font-size: var(--p-font);
   font-weight: 500;
@@ -295,7 +337,13 @@ span {
 .services-box:hover a{
   color: #8b8a8f;
 }
+.servicesplus-box:hover a{
+  color: #8b8a8f;
+}
 .services-box:hover p{
+  color: #c9c9cc;
+}
+.servicesplus-box:hover p{
   color: #c9c9cc;
 }
 .portfolio-content {
