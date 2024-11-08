@@ -3,19 +3,19 @@ import { InlineCode } from "@/once-ui/components";
 const createI18nContent = (t) => {
     const person = {
         firstName: 'Selene',
-        lastName:  'Yu',
+        lastName: 'Yu',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
-        role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        role: t("person.role"),
+        avatar: '/images/avatar.jpg',
+        location: 'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
         languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
         display: true,
-        title: <>{t("newsletter.title", {firstName: person.firstName})}</>,
+        title: <>{t("newsletter.title", { firstName: person.firstName })}</>,
         description: <>{t("newsletter.description")}</>
     }
 
@@ -46,8 +46,8 @@ const createI18nContent = (t) => {
 
     const home = {
         label: t("home.label"),
-        title: t("home.title", {name: person.name}),
-        description: t("home.description", {role: person.role}),
+        title: t("home.title", { name: person.name }),
+        description: t("home.description", { role: person.role }),
         headline: <>{t("home.headline")}</>,
         subline: <>{t("home.subline")}</>
     }
@@ -55,7 +55,7 @@ const createI18nContent = (t) => {
     const about = {
         label: t("about.label"),
         title: t("about.label"),
-        description: t("about.description", {name: person.name, role: person.role, location: person.location}),
+        description: t("about.description", { name: person.name, role: person.role, location: person.location }),
         tableOfContent: {
             display: true,
             subItems: true
@@ -78,6 +78,7 @@ const createI18nContent = (t) => {
             experiences: [
                 {
                     company: 'FLY',
+                    location: t("about.work.experiences.FLY.location"),
                     timeframe: t("about.work.experiences.FLY.timeframe"),
                     role: t("about.work.experiences.FLY.role"),
                     achievements: t("about.work.experiences.FLY.achievements").split(";"),
@@ -95,7 +96,7 @@ const createI18nContent = (t) => {
                     timeframe: t("about.work.experiences.Creativ3.timeframe"),
                     role: t("about.work.experiences.Creativ3.role"),
                     achievements: t("about.work.experiences.Creativ3.achievements").split(";"),
-                    images: [ ]
+                    images: []
                 }
             ]
         },
@@ -105,10 +106,12 @@ const createI18nContent = (t) => {
             institutions: [
                 {
                     name: 'University of Jakarta',
+                    location: 'Dhaka',
                     description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
                 },
                 {
                     name: 'Build the Future',
+                    location: 'Dhaka',
                     description: <>{t("about.studies.institutions.Build the Future.description")}</>,
                 }
             ]
@@ -154,7 +157,7 @@ const createI18nContent = (t) => {
     const blog = {
         label: t("blog.label"),
         title: t("blog.title"),
-        description: t("blog.description", {name: person.name})
+        description: t("blog.description", { name: person.name })
         // Create new blog posts by adding a new .mdx file to app/blog/posts
         // All posts will be listed on the /blog route
     }
@@ -162,7 +165,7 @@ const createI18nContent = (t) => {
     const work = {
         label: t("work.label"),
         title: t("work.title"),
-        description: t("work.description", {name: person.name})
+        description: t("work.description", { name: person.name })
         // Create new project pages by adding a new .mdx file to app/blog/posts
         // All projects will be listed on the /home and /work routes
     }
@@ -170,7 +173,7 @@ const createI18nContent = (t) => {
     const gallery = {
         label: t("gallery.label"),
         title: t("gallery.title"),
-        description: t("gallery.description", {name: person.name}),
+        description: t("gallery.description", { name: person.name }),
         // Images from https://pexels.com
         images: [
             {
@@ -183,12 +186,12 @@ const createI18nContent = (t) => {
                 alt: 'image',
                 orientation: 'horizontal'
             },
-            { 
+            {
                 src: '/images/gallery/img-03.jpg',
                 alt: 'image',
                 orientation: 'vertical'
             },
-            { 
+            {
                 src: '/images/gallery/img-04.jpg',
                 alt: 'image',
                 orientation: 'horizontal'
@@ -223,7 +226,7 @@ const createI18nContent = (t) => {
                 alt: 'image',
                 orientation: 'horizontal'
             },
-            { 
+            {
                 src: '/images/gallery/img-11.jpg',
                 alt: 'image',
                 orientation: 'vertical'
@@ -238,7 +241,7 @@ const createI18nContent = (t) => {
                 alt: 'image',
                 orientation: 'horizontal'
             },
-            { 
+            {
                 src: '/images/gallery/img-14.jpg',
                 alt: 'image',
                 orientation: 'horizontal'

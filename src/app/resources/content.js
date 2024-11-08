@@ -69,15 +69,16 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>I'm a software developer passionate about building intuitive, user-centered applications. My journey includes developing a Firefox add-on called Save Link Collections, which simplifies saving and restoring link collections through Google OAuth 2.0, and a fellowship with Headstarter, where I learned to integrate AI into web applications. With experience in front-end frameworks like React, back-end tools like Firebase, and a commitment to clean, effective code, I thrive on solving problems and delivering seamless digital experiences. Welcome to my portfolio—where code meets creativity!</>
+        description: <>Hey there! I’m a software developer with a love for crafting intuitive apps and experimenting with AI. I built Save Link Collections, a Firefox add-on for managing link collections with Google OAuth, and deepened my AI skills through a Headstarter fellowship. I’m fluent in React, Firebase, and, thanks to my background in copywriting, know how to keep things clear and engaging. When I’m not coding, you’ll probably find me behind a camera, capturing aesthetic shots with a creative twist. Welcome to my portfolio—take a look around!</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'Headstarter (New York, Remote)',
-                timeframe: 'July 2024 - September 2024',
+                company: 'Headstarter',
+                location: 'New York, Remote',
+                timeframe: '2024/07 - 2024/09',
                 role: 'Software Engineering Fellow',
                 achievements: [
                     <>Spearheaded the integration of AI tools into web apps.</>,
@@ -94,7 +95,7 @@ const about = {
             },
             {
                 company: 'CRM Realm',
-                timeframe: 'May 2024 - July 2024',
+                timeframe: '2024/05 - 2024/07',
                 role: 'Salesforce Developer',
                 achievements: [
                     <>Developed 15+ projects across the Salesforce ecosystem.</>,
@@ -104,7 +105,7 @@ const about = {
             },
             {
                 company: 'Nerd Castle LTD',
-                timeframe: 'May 2024 - July 2024',
+                timeframe: '2024/05 - 2024/07',
                 role: 'ASP.NET Developer Trainee',
                 achievements: [
                     <>Created a Windows Form app that generates
@@ -125,7 +126,7 @@ const about = {
             },
             {
                 company: '10 Ways Web Properties Ltd.',
-                timeframe: '2022 - 2023',
+                timeframe: '2022/12 - 2023/04',
                 role: 'SEO Specialist',
                 achievements: [
                     <>Analyzed trending topics using Google Trends.</>,
@@ -135,7 +136,7 @@ const about = {
             },
             {
                 company: '10 Ways Web Properties Ltd.',
-                timeframe: '2021 - 2022',
+                timeframe: '2021/08 - 2022/11',
                 role: 'Senior Copywriter',
                 achievements: [
                     <>Wrote 400+ guides on Windows, iOS, Android and
@@ -151,12 +152,14 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'Independent University,  Bangladesh',
+                location: 'Dhaka, Bangladesh',
+                description: <>Studied Computer Science and Engineering</>
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Bangladesh International School (English Section)',
+                location: 'Jeddah, Saudi Arabia',
+                description: <>Completed Middle School, High School and College education under Cambridge Curriculum</>,
             }
         ]
     },
