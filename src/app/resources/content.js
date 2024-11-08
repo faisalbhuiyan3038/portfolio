@@ -7,7 +7,7 @@ const person = {
         return `${this.firstName} ${this.lastName}`;
     },
     role: 'Software Developer',
-    avatar: '/images/avatar.jpg',
+    avatar: '/images/avatar-02.png',
     location: 'Asia/Dhaka',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Bengali']  // optional: Leave the array empty if you don't want to display languages
 }
@@ -76,29 +76,71 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Headstarter (New York, Remote)',
+                timeframe: 'July 2024 - September 2024',
+                role: 'Software Engineering Fellow',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Spearheaded the integration of AI tools into web apps.</>,
+                    <>Received insights employees from companies like Google and several AI startups.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '/images/projects/project-01/cover-01.png',
+                        alt: 'Headstarter Acceptance',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'CRM Realm',
+                timeframe: 'May 2024 - July 2024',
+                role: 'Salesforce Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Developed 15+ projects across the Salesforce ecosystem.</>,
+                    <>Got familiarized with project management tools like Jira and Asana.</>
+                ],
+                images: []
+            },
+            {
+                company: 'Nerd Castle LTD',
+                timeframe: 'May 2024 - July 2024',
+                role: 'ASP.NET Developer Trainee',
+                achievements: [
+                    <>Created a Windows Form app that generates
+                        reports using data from an SQL database and
+                        exports to CSV.</>,
+                    <>Built an E-Commerce app with lazy loading for
+                        instant speeds and authentication using JWT
+                        Tokens.</>
+                ],
+                images: [
+                    {
+                        src: '/images/projects/project-02/project-02.jpg',
+                        alt: 'ShopHive Project',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
+                company: '10 Ways Web Properties Ltd.',
+                timeframe: '2022 - 2023',
+                role: 'SEO Specialist',
+                achievements: [
+                    <>Analyzed trending topics using Google Trends.</>,
+                    <>Increased organization's web presence.</>
+                ],
+                images: []
+            },
+            {
+                company: '10 Ways Web Properties Ltd.',
+                timeframe: '2021 - 2022',
+                role: 'Senior Copywriter',
+                achievements: [
+                    <>Wrote 400+ guides on Windows, iOS, Android and
+                        numerous software and hardware troubleshooting,
+                        each with 1600+ words.</>
                 ],
                 images: []
             }
