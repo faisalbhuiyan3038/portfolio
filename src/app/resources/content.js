@@ -99,6 +99,7 @@ const about = {
                 role: 'Salesforce Developer',
                 achievements: [
                     <>Developed 15+ projects across the Salesforce ecosystem.</>,
+                    <>Communicated effectively with US Clients via Zoom to understand project requirements and explain project details.</>,
                     <>Got familiarized with project management tools like Jira and Asana.</>
                 ],
                 images: []
@@ -117,8 +118,14 @@ const about = {
                 ],
                 images: [
                     {
-                        src: '/images/projects/project-02/project-02.jpg',
-                        alt: 'ShopHive Project',
+                        src: '/images/projects/project-02/products.jpg',
+                        alt: 'Products',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-02/checkout.jpg',
+                        alt: 'Checkout',
                         width: 16,
                         height: 9
                     }
@@ -167,24 +174,6 @@ const about = {
         display: true, // set to false to hide this section
         title: 'Technical skills',
         skills: [
-            {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
-            },
             {
                 title: 'Next.js',
                 description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
