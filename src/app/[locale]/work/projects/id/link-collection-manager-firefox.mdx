@@ -1,0 +1,110 @@
+---
+title: "Link Collection Manager for Firefox"
+publishedAt: "2024-08-20"
+summary: "Save Link Collections is a powerful Firefox add-on designed to help users manage and organize their online browsing experience more efficiently. Whether you're researching, curating content, or just keeping track of your favorite websites, this extension allows you to easily save, organize, and access your collections of links across multiple devices."
+images:
+  - "/images/projects/inventory-management/inventory-list.png"
+  - "/images/projects/inventory-management/camera-page.png"
+  - "/images/projects/inventory-management/add-new-item.png"
+team:
+  - name: "Faisal Bhuiyan"
+    role: "Web Developer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/faisalbhuiyan3038"
+---
+
+## Overview
+
+Save Link Collections is a Firefox browser extension that bridges the gap between Firefox's mobile and desktop experiences. Inspired by Firefox Android's collections feature, this addon enables users to create, manage, and sync their link collections across devices. The primary motivation was to provide desktop users with the ability to maintain organized link collections similar to the mobile experience, while also offering a simple way to transfer collections between devices.
+
+## Key Features
+
+### Collection Management
+- Create named collections of website links
+- Import multiple URLs via comma-separated input
+- Edit existing collections through a text-based interface
+- No artificial limits on collection size or number
+
+### Browser Integration
+- Copy all open tab URLs via context menu
+- Seamless popup interface for quick access
+- Dedicated pages for advanced features
+
+### Data Portability
+- Export collections as JSON files for backup
+- Import collections from JSON files
+- Cross-device compatibility between Firefox Desktop and Android
+
+## Technical Implementation
+
+### Architecture
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Storage**: Browser Storage API
+- **Data Structure**: Array-based storage for straightforward data management
+- **UI Components**:
+  - Popup interface for regular operations
+  - Dedicated pages for backup/restore functionality
+  - Context menu integration for tab URL capture
+
+### Cross-Platform Compatibility
+The addon maintains consistent functionality across Firefox Desktop and Android platforms, with the only variation being UI sizing adjustments for different screen formats. Special consideration was given to browser API compatibility, implementing fallback solutions where necessary.
+
+## Challenges and Solutions
+
+### Challenge 1: Android Compatibility
+**Problem**: Initial implementation of JSON backup/restore functionality failed on Firefox Android despite working correctly on desktop.
+**Solution**: Implemented an iframe-based workaround to ensure consistent behavior across platforms while maintaining functionality within Firefox's security model.
+
+### Challenge 2: Performance Optimization
+**Problem**: Need to comply with Firefox's performance requirements for addon approval.
+**Solution**: Implemented efficient data structures and optimized storage operations to meet Firefox's performance guidelines.
+
+### Challenge 3: Cross-Platform UI
+**Problem**: Creating a consistent user experience across different device form factors.
+**Solution**: Developed a responsive interface using Bootstrap, with dynamic sizing adjustments for different platforms.
+
+## User Impact and Metrics
+
+- Published on Firefox Add-ons store
+- Average rating of 4 stars
+- 32 active users
+- 1 weekly download (growing user base)
+- Positive user feedback, with suggestions for future enhancements
+
+## Learnings
+
+1. **Browser API Considerations**
+   - Importance of testing across different Firefox versions and platforms
+   - Need for platform-specific fallback solutions
+   - Understanding browser extension security models
+
+2. **User Experience**
+   - Value of simple, straightforward interfaces for frequent tasks
+   - Importance of cross-device consistency
+   - Benefits of maintaining feature parity with native browser capabilities
+
+3. **Development Process**
+   - Significance of performance optimization in browser extensions
+   - Value of studying other developers' solutions for common problems
+   - Importance of user feedback in feature prioritization
+
+## Future Plans
+
+### Potential Enhancements
+1. **Data Validation**
+   - Implement URL validation for link inputs
+   - Add format checking for imported collections
+
+2. **User Experience Improvements**
+   - Add cloud sync capabilities (based on user feedback)
+   - Implement collection size limits for better performance
+   - Support additional link input formats
+
+3. **Feature Expansion**
+   - Enhanced editing capabilities for individual links
+   - Advanced collection organization options
+   - Improved backup and restore mechanisms
+
+## Conclusion
+
+Save Link Collections demonstrates how browser extensions can effectively bridge functionality gaps between mobile and desktop experiences. The project successfully provides a solution for users who need to manage and sync their link collections across devices, while maintaining a simple and intuitive interface. The positive user feedback and growing user base indicate that the addon effectively meets its intended purpose, with room for future enhancements based on user needs and technological capabilities.
