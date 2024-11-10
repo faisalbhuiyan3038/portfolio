@@ -82,7 +82,7 @@ const about = {
                 role: 'Software Engineering Fellow',
                 achievements: [
                     <>Spearheaded the integration of AI tools into web apps.</>,
-                    <>Received insights employees from companies like Google and several AI startups.</>
+                    <>Received insights from employees from companies like Google and several AI startups.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {

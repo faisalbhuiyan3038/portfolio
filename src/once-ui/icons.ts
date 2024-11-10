@@ -35,7 +35,14 @@ import {
 	FaInstagram,
 	FaXTwitter,
 	FaLocationDot,
+	FaFilePdf,
+	FaCircleChevronDown,
+	FaDownload,
 } from "react-icons/fa6";
+
+import {
+	LiaChevronDownSolid,
+} from "react-icons/lia"
 
 export const iconLibrary: Record<string, IconType> = {
 	chevronUp: HiChevronUp,
@@ -65,5 +72,9 @@ export const iconLibrary: Record<string, IconType> = {
 	linkedin: FaLinkedin,
 	instagram: FaInstagram,
 	locationdot: FaLocationDot,
+	filepdf: FaFilePdf,
+	circleChevronDown: FaCircleChevronDown,
+	download: FaDownload,
+	liaChevronDownSolid: LiaChevronDownSolid,
 	x: FaXTwitter,
 };
