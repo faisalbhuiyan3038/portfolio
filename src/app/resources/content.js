@@ -63,7 +63,7 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
     intro: {
@@ -171,7 +171,7 @@ const about = {
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Technical skills',
         skills: [
             {
@@ -213,74 +213,84 @@ const gallery = {
     // Images from https://pexels.com
     images: [
         {
-            src: '/images/gallery/img-01.jpg',
-            alt: 'image',
+            src: '/images/gallery/airplane-v.jpg',
+            alt: 'airplane',
             orientation: 'vertical'
         },
         {
-            src: '/images/gallery/img-02.jpg',
-            alt: 'image',
+            src: '/images/gallery/cox-l.jpg',
+            alt: 'cox bazar',
             orientation: 'horizontal'
         },
         {
-            src: '/images/gallery/img-03.jpg',
-            alt: 'image',
+            src: '/images/gallery/ant-v.jpg',
+            alt: 'ant close up',
             orientation: 'vertical'
         },
         {
-            src: '/images/gallery/img-04.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-05.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-06.jpg',
-            alt: 'image',
+            src: '/images/gallery/bd-m-v.jpg',
+            alt: 'bd m v',
             orientation: 'vertical'
         },
         {
-            src: '/images/gallery/img-07.jpg',
-            alt: 'image',
+            src: '/images/gallery/ksa-l.jpg',
+            alt: 'ksa',
             orientation: 'horizontal'
         },
         {
-            src: '/images/gallery/img-08.jpg',
-            alt: 'image',
+            src: '/images/gallery/boat-v.jpg',
+            alt: 'boat',
             orientation: 'vertical'
         },
         {
-            src: '/images/gallery/img-09.jpg',
-            alt: 'image',
+            src: '/images/gallery/mosque-l.jpg',
+            alt: 'mosque',
             orientation: 'horizontal'
         },
         {
-            src: '/images/gallery/img-10.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-11.jpg',
-            alt: 'image',
+            src: '/images/gallery/clouds-v.jpg',
+            alt: 'clouds',
             orientation: 'vertical'
         },
         {
-            src: '/images/gallery/img-12.jpg',
-            alt: 'image',
+            src: '/images/gallery/night-purple-l.jpg',
+            alt: 'night purple',
             orientation: 'horizontal'
         },
         {
-            src: '/images/gallery/img-13.jpg',
-            alt: 'image',
+            src: '/images/gallery/park-sunset-l.jpg',
+            alt: 'park sunset',
             orientation: 'horizontal'
         },
         {
-            src: '/images/gallery/img-14.jpg',
-            alt: 'image',
+            src: '/images/gallery/park-v.jpg',
+            alt: 'park',
+            orientation: 'vertical'
+        },
+        {
+            src: '/images/gallery/sunset-l.jpg',
+            alt: 'sunset',
             orientation: 'horizontal'
+        },
+        {
+            src: '/images/gallery/reflection-v.jpg',
+            alt: 'reflection',
+            orientation: 'vertical'
+        },
+        {
+            src: '/images/gallery/resort-l.jpg',
+            alt: 'resort',
+            orientation: 'horizontal'
+        },
+        {
+            src: '/images/gallery/resort-v.jpg',
+            alt: 'resort',
+            orientation: 'vertical'
+        },
+        {
+            src: '/images/gallery/cox-v.jpg',
+            alt: 'cox',
+            orientation: 'vertical'
         },
     ]
 }
