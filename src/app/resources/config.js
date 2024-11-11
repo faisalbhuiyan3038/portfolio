@@ -26,7 +26,7 @@ const protectedRoutes = {
 const effects = {
     gradient: true,
     dots: true,
-    lines: true,
+    lines: false,
 }
 
 const style = {
@@ -34,10 +34,10 @@ const style = {
     neutral: 'sand',         // sand | gray | slate
     brand: 'orange',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     accent: 'moss',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid: 'contrast',     // color | contrast
-    solidStyle: 'plastic',         // flat | plastic
+    solid: 'color',     // color | contrast
+    solidStyle: 'flat',         // flat | plastic
     border: 'playful',      // rounded | playful | conservative
-    surface: 'translucent',  // filled | translucent
+    surface: 'filled',  // filled | translucent
     transition: 'all'           // all | micro | macro
 }
 

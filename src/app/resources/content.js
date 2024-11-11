@@ -54,6 +54,7 @@ const home = {
 const about = {
     label: 'About',
     title: 'About me',
+    resume: 'https://drive.google.com/drive/folders/11FigQ2BJ7m0npOFnq6PcB0AaedvlqI0h?usp=sharing',
     description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,

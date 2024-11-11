@@ -55,6 +55,7 @@ const createI18nContent = (t) => {
     const about = {
         label: t("about.label"),
         title: t("about.label"),
+        resume: 'https://drive.google.com/',
         description: t("about.description", { name: person.name, role: person.role, location: person.location }),
         tableOfContent: {
             display: true,

@@ -118,14 +118,14 @@ export default function Home(
 							</Button>
 							<Button
 								data-border="rounded"
-								href={`https://drive.google.com/drive/folders/11FigQ2BJ7m0npOFnq6PcB0AaedvlqI0h?usp=sharing`}
+								href={about.resume}
 								variant="tertiary"
 								size="m">
 								<Flex
 									gap="8"
 									alignItems="center">
 									<Icon name='liaChevronDownSolid' size='m' />
-									{t("Download Resume")}
+									Download Resume
 								</Flex>
 							</Button>
 						</Flex>
