@@ -32,11 +32,11 @@ const effects = {
 const style = {
     theme: 'light',         // dark | light
     neutral: 'sand',         // sand | gray | slate
-    brand: 'orange',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    brand: 'aqua',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     accent: 'moss',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid: 'color',     // color | contrast
-    solidStyle: 'flat',         // flat | plastic
-    border: 'playful',      // rounded | playful | conservative
+    solid: 'contrast',     // color | contrast
+    solidStyle: 'plastic',         // flat | plastic
+    border: 'rounded',      // rounded | playful | conservative
     surface: 'translucent',  // filled | translucent
     transition: 'all'           // all | micro | macro
 }
