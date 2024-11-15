@@ -125,7 +125,7 @@ export default function Home(
 									gap="8"
 									alignItems="center">
 									<Icon name='liaChevronDownSolid' size='m' />
-									Download Resume
+									Resume
 								</Flex>
 							</Button>
 						</Flex>
