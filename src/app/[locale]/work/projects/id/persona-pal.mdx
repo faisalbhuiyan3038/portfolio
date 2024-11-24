@@ -1,0 +1,172 @@
+---
+title: "personaPal"
+publishedAt: "2024-11-23"
+summary: "Create and chat with AI companions inspired by real or fictional personalities."
+images:
+  - "/images/projects/personaPal/home-page.jpg"
+  - "/images/projects/personaPal/create-page.jpg"
+  - "/images/projects/personaPal/chat-page.jpg"
+team:
+  - name: "Faisal Bhuiyan"
+    role: "Web Developer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/faisalbhuiyan3038"
+github: "https://github.com/faisalbhuiyan3038/persona-pal"
+live: "https://persona-pal-sigma.vercel.app/"
+---
+
+## Overview
+
+PersonaPal is a web application that enables users to create and interact with AI companions. Built with modern web technologies, it allows users to craft unique AI personalities by providing seed data and behavioral characteristics. This case study explores the technical journey, challenges, and learnings from building a scalable AI companion platform.
+
+## Problem Statement
+
+The AI companion space is growing rapidly, but most solutions offer pre-built personalities with limited customization. PersonaPal addresses this by allowing users to create completely customized AI companions, making AI interactions more personal and meaningful.
+
+## Technical Stack
+
+### Frontend
+- Next.js 14 for the core application framework
+- TailwindCSS for styling
+- TypeScript for type safety
+- Clerk for authentication
+
+### Backend & Data
+- TiDB for primary database
+- Prisma as the ORM
+- Pinecone for vector embeddings
+- Upstash Redis for caching
+- Cloudinary for image storage
+
+### AI/ML
+- Replicate for model hosting
+- OpenAI API for language processing
+
+## Key Features
+
+### User Authentication
+- Secure sign-up and login through Clerk
+- Protected routes and API endpoints
+- User-specific companion management
+
+### Companion Creation
+- Intuitive companion creation interface
+- Image upload through Cloudinary
+- Customizable companion attributes:
+  - Name and visual appearance
+  - Personality description
+  - Behavioral preamble
+  - Seed conversations for personality training
+
+### Intelligent Search
+- Implemented debouncing for efficient search
+- Search starts after user stops typing
+- Optimized for performance and API usage
+
+### Chat Interface
+- Real-time conversation display
+- Rate-limited to 10 requests per 10 seconds
+- Persistent chat history
+- Vector-based context awareness
+
+### User Experience
+- Dark and light mode support
+- Responsive design
+- Creator-only companion editing
+- Intuitive navigation
+
+## Technical Implementation
+
+### Search Optimization
+The search functionality implements debouncing to prevent excessive API calls:
+
+```typescript
+const handleSearch = useCallback(
+  debounce((term: string) => {
+    // Search implementation
+  }, 500),
+  []
+);
+```
+
+### State Management
+Chat messages are managed through a combination of optimistic updates and server validation:
+- Immediate UI updates for better user experience
+- Background synchronization with the database
+- Error handling for failed message deliveries
+
+## Challenges and Solutions
+
+### Vector Search Implementation
+One of the major challenges was implementing vector search functionality with Pinecone. This required careful consideration of:
+- Embedding generation and storage
+- Query optimization
+- Context relevance
+
+### Message Persistence
+Initial issues with message display required solving:
+- Response state synchronization
+- Database update confirmation
+- UI refresh logic
+
+### API Limitations
+Working with free-tier API limitations required implementing:
+- Rate limiting (10 requests/10 seconds)
+- Graceful degradation when limits are reached
+- User feedback for service availability
+
+## Development Process
+
+### Timeline and Approach
+- Development completed in under a month
+- Component-based architecture for maintainability
+- Iterative development with regular testing
+
+### Technology Choices
+- Replicate chosen for AI model hosting based on:
+  - Easy integration
+  - Reliable performance
+  - Good documentation
+- TiDB selected for:
+  - Scalability
+  - SQL compatibility
+  - Cloud-native architecture
+
+## Learnings
+
+### Technical Insights
+1. Importance of proper state management in real-time applications
+2. Benefits of component separation for maintainability
+3. Challenges of working with AI model APIs
+4. Impact of rate limiting on user experience
+
+### Best Practices Discovered
+1. Early implementation of rate limiting
+2. Component-based architecture for scalability
+3. Proper error handling for third-party services
+4. User feedback for system status
+
+## Future Plans
+
+### Potential Improvements
+1. Enhanced companion customization options
+2. Improved context handling for more natural conversations
+3. Expanded language support
+4. Premium tier with higher rate limits
+
+### Technical Enhancements
+1. Optimized vector search implementation
+2. Enhanced caching strategies
+3. Improved error handling and recovery
+4. Performance optimization for scaling
+
+## Conclusion
+
+PersonaPal demonstrates the potential of customizable AI companions while highlighting the challenges of building AI-powered applications. The project serves as a valuable learning experience in:
+- Building real-time AI applications
+- Managing multiple third-party services
+- Implementing vector search
+- Handling API limitations
+- Creating intuitive user experiences
+
+The foundation is now set for future enhancements and scaling to support a larger user base.

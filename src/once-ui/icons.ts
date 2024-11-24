@@ -38,6 +38,8 @@ import {
 	FaFilePdf,
 	FaCircleChevronDown,
 	FaDownload,
+	FaArrowUpRightFromSquare,
+	FaLink
 } from "react-icons/fa6";
 
 import {
@@ -76,5 +78,7 @@ export const iconLibrary: Record<string, IconType> = {
 	circleChevronDown: FaCircleChevronDown,
 	download: FaDownload,
 	liaChevronDownSolid: LiaChevronDownSolid,
+	arrowUpRightFromSquare: FaArrowUpRightFromSquare,
 	x: FaXTwitter,
+	link: FaLink,
 };
